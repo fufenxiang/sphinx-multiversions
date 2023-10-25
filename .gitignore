@@ -1,5 +1,4 @@
 # Build outputs
-_build/*
-build/*
-__pycache__/*
-source/__pycache__/*
+docs/_build/*
+docs/build/*
+docs/source/__pycache__/*
