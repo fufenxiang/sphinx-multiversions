@@ -1,0 +1,18 @@
+{%- extends "!layout.html" %}
+
+<!-- Add versions dropdown selector for sphinx default theme. -->
+<!-- {%- block rootrellink %}
+<li><a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}</li>
+<li>
+    <select onchange="location.href = location.href.replace('/{{ release }}', '/' + this.value);" autocomplete="off">
+        {% for version in versions %}
+            {% if version == release %}
+            <option value="{{ version }}" selected="selected">{{ version }}</option>
+            {% else %}
+            <option value="{{ version }}">{{ version }}</option>
+            {% endif %}
+        {% endfor %}
+    </select>
+    {{ reldelim1 }}
+</li>
+{%- endblock %} -->

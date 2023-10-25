@@ -1,0 +1,17 @@
+<!-- Add versions dropdown selector for sphinx_rtd_theme 
+    Keep file name as versions.html, do not change.
+-->
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Sphinx Multiple Versions</span>
+      V: {{ release }}
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+        {% for version in versions %}
+        <dd><a href="javascript:void(0)" onclick="location.href = location.href.replace('/{{ release }}', '/{{ version }}');">{{ version }}</a></dd>
+        {% endfor %}
+      </dl>
+    </div>
+</div>
